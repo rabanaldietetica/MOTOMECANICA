@@ -439,8 +439,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
           <div>
             <span class="detail-label">ATENCIÓN</span>
-            <strong>LUNES A SÁBADOS</strong>
-            <span>09:00 A 18:00 HS</span>
+            <strong>LUNES A VIERNES</strong>
+            <span>08:30 A 18:00 HS</span>
+            <strong>SÁBADOS</strong>
+            <span>10:00 A 14:00 HS</span>
+            <strong>DOMINGOS</strong>
+            <span>CERRADO</span>
           </div>
         </div>
       </section>
