@@ -11,82 +11,67 @@ const mapsUrl =
   'https://www.google.com/maps/search/?api=1&query=Av.+La+Plata+2926,+Pompeya,+CABA';
 
 const services = [
-  {
+{
     icon: '01',
     title: 'MECÁNICA GENERAL',
     text: 'Service, mantenimiento preventivo, puesta a punto, revisiones generales y reparación de fallas mecánicas.'
   },
-  {
+{
     icon: '02',
     title: 'MOTOR',
     text: 'Diagnóstico, reparación y armado de motores, válvulas, distribución, juntas, cilindros, pistones, aros, cigüeñal y más.'
   },
-  {
+{
     icon: '03',
     title: 'ELECTRICIDAD',
     text: 'Diagnóstico de fallas eléctricas, cableado, batería, carga, arranque, luces, fusibles, relés y sistemas eléctricos.'
   },
-  {
-    icon: '04',
-    title: 'ELECTRÓNICA',
-    text: 'Revisión de sensores, sistemas electrónicos, encendido e inyección y diagnóstico especializado según el modelo.'
-  },
-  {
+{
     icon: '05',
     title: 'CARBURACIÓN',
     text: 'Limpieza, regulación, sincronización, puesta a punto y diagnóstico de problemas de alimentación.'
   },
-  {
-    icon: '06',
-    title: 'INYECCIÓN',
-    text: 'Diagnóstico de inyección electrónica, cuerpo de aceleración, alimentación y fallas de funcionamiento.'
-  },
-  {
+{
     icon: '07',
     title: 'TRANSMISIÓN',
     text: 'Cadena, piñón, corona, kit de transmisión, tensado, lubricación, embrague y diagnóstico de caja.'
   },
-  {
+{
     icon: '08',
     title: 'FRENOS',
     text: 'Pastillas, discos, campanas, zapatas, líquido, purgado, bombas, pinzas y revisión integral del sistema.'
   },
-  {
+{
     icon: '09',
     title: 'SUSPENSIÓN',
     text: 'Barrales, retenes, aceite de suspensión, amortiguadores, dirección, rodamientos y componentes del tren delantero.'
   },
-  {
-    icon: '10',
-    title: 'RUEDAS Y NEUMÁTICOS',
-    text: 'Cambio de neumáticos, cámaras, válvulas, pinchaduras, rodamientos y revisión de ruedas y llantas.'
-  },
-  {
+{
     icon: '11',
     title: 'DIAGNÓSTICO',
-    text: 'Buscamos la causa del problema antes de cambiar piezas innecesariamente. Diagnóstico mecánico, eléctrico y electrónico.'
+    text: 'Buscamos la causa del problema antes de cambiar piezas innecesariamente. Diagnóstico mecánico y eléctrico.'
   },
-  {
+{
     icon: '12',
     title: 'PERFORMANCE',
     text: 'Puesta a punto, mejoras de respuesta, modificaciones y preparación orientada al uso deportivo.'
   },
-  {
+{
     icon: '13',
     title: 'PREPARACIÓN',
     text: 'Preparación de motos para uso exigente, deportivo o de competición, según las necesidades del proyecto.'
   },
-  {
+{
     icon: '14',
     title: 'RESTAURACIÓN',
     text: 'Recuperación de motos que estuvieron paradas, puesta en marcha, revisión completa y recuperación mecánica.'
   },
-  {
+{
     icon: '15',
     title: 'POST-ACCIDENTE',
     text: 'Revisión de motos después de una caída o accidente, buscando daños mecánicos, eléctricos y estructurales.'
   },
-  {
+{
     icon: '16',
     title: 'PERSONALIZACIÓN',
     text: 'Instalación de accesorios, componentes, iluminación, manillares, espejos, puños y diferentes mejoras.'
@@ -105,7 +90,25 @@ const videos = [
   { number: '04', file: 'video-04.mp4' },
   { number: '05', file: 'video-05.mp4' },
   { number: '06', file: 'video-07.mp4' },
-  { number: '07', file: 'video-08.mp4' }
+  { number: '07', file: 'video-08.mp4' },
+  { number: '08', file: 'video-09.mp4' },
+  { number: '09', file: 'video-10.mp4' },
+  { number: '10', file: 'video-11.mp4' },
+  { number: '11', file: 'video-12.mp4' },
+  { number: '12', file: 'video-13.mp4' },
+  { number: '13', file: 'video-14.mp4' },
+  { number: '14', file: 'video-15.mp4' },
+  { number: '15', file: 'video-16.mp4' },
+  { number: '16', file: 'video-17.mp4' },
+  { number: '17', file: 'video-18.mp4' },
+  { number: '18', file: 'video-19.mp4' },
+  { number: '19', file: 'video-20.mp4' },
+  { number: '20', file: 'video-21.mp4' },
+  { number: '21', file: 'video-22.mp4' },
+  { number: '22', file: 'video-23.mp4' },
+  { number: '23', file: 'video-24.mp4' },
+  { number: '24', file: 'video-25.mp4' },
+  { number: '25', file: 'video-26.mp4' }
 ];
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -127,6 +130,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <!-- HERO -->
       <section class="hero" id="inicio">
         <div class="hero-checkers"></div>
+        <div class="hero-sign-watermark" aria-hidden="true"></div>
 
         <div class="hero-copy">
           <span class="eyebrow">MOTORCYCLE SERVICE · POMPEYA</span>
@@ -218,7 +222,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <article>
             <span class="benefit-number">02</span>
             <h3>SEGURIDAD</h3>
-            <p>Frenos, neumáticos, transmisión, suspensión y funcionamiento general: todo importa.</p>
+            <p>Frenos, transmisión, suspensión y funcionamiento general: todo importa.</p>
           </article>
 
           <article>
@@ -277,13 +281,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </a>
         </div>
 
-        <div class="why-visual">
-          <div class="checker-panel">
-            <span>RACING</span>
-            <strong>02</strong>
-          </div>
-          <img src="/images/foto-01.png" alt="Trabajo de MOTOMECANICA">
-        </div>
+
       </section>
 
       <!-- SERVICIOS -->

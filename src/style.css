@@ -1181,3 +1181,120 @@ footer {
     justify-content: space-between;
   }
 }
+
+/* Marca de agua del cartel: detrás del texto, nunca sobre la moto */
+.hero-sign-watermark {
+  position: absolute;
+  z-index: 1;
+  top: 2%;
+  left: 50%;
+  width: 100%;
+  height: 48%;
+  transform: translateX(-50%);
+  background-image: url('/images/logo.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.09;
+  pointer-events: none;
+}
+
+/* Mantener los textos por delante de la marca de agua */
+.hero-copy {
+  z-index: 3;
+}
+
+@media (min-width: 1050px) {
+  .hero-sign-watermark {
+    top: 5%;
+    left: 3%;
+    width: 58%;
+    height: 65%;
+    transform: none;
+    background-position: center center;
+    opacity: 0.085;
+  }
+}
+
+/* Identidad visual grande en la portada */
+.topbar .brand {
+  display: none;
+}
+
+.hero-sign-watermark {
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 62%;
+  transform: translateX(-50%);
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+@media (min-width: 1050px) {
+  .hero-sign-watermark {
+    top: 3%;
+    left: 0;
+    width: 57%;
+    height: 72%;
+    transform: none;
+    opacity: 0.14;
+  }
+}
+
+/* AJUSTES CARTEL MOTOMECANICA */
+.topbar{box-sizing:border-box;width:100vw;max-width:100vw;position:relative;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0!important;margin:0 0 1rem!important}
+.topbar .brand{display:block;width:100%;margin:0;padding:0}
+.topbar .brand img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;opacity:1!important;filter:none!important;border-radius:0}
+.topbar-whatsapp{align-self:flex-end;margin:10px 16px}
+.hero-sign-watermark{display:none!important}
+
+/* CARTEL PRINCIPAL: GRANDE Y A ANCHO COMPLETO */
+.topbar {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  width: 100vw !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  left: auto !important;
+  transform: none !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+.topbar .brand {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 0 100% !important;
+}
+
+.topbar .brand img {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  opacity: 1 !important;
+  filter: none !important;
+  border-radius: 0 !important;
+}
+
+.topbar .topbar-whatsapp {
+  align-self: flex-end !important;
+  margin: 10px 16px !important;
+}
+
+.hero-sign-watermark {
+  display: none !important;
+}
