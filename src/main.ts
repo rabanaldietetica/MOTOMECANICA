@@ -455,6 +455,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <strong>MOTOMECANICA</strong>
         <span>PASIÓN · PRECISIÓN · PERFORMANCE</span>
         <span>AV. LA PLATA 2926 · POMPEYA · CABA</span>
+        <a class="facebook-button" href="https://www.facebook.com/alfredo.garcia.143658" target="_blank" rel="noopener noreferrer" aria-label="Visitar Facebook de MOTOMECANICA">
+          <span class="facebook-icon">f</span>
+          SEGUINOS EN FACEBOOK
+        </a>
       </div>
     </footer>
 

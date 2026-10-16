@@ -1298,3 +1298,54 @@ footer {
 .hero-sign-watermark {
   display: none !important;
 }
+
+
+/* BOTON FACEBOOK MOTOMECANICA */
+.facebook-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 18px auto 0;
+  padding: 12px 20px;
+  border: 1px solid #1877f2;
+  border-radius: 8px;
+  background: #1877f2;
+  color: #fff !important;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none !important;
+  transition: background .2s ease, transform .2s ease;
+}
+.facebook-button:hover {
+  background: #0866ff;
+  transform: translateY(-2px);
+}
+.facebook-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #fff;
+  color: #1877f2;
+  font-family: Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 1;
+}
+.footer-inner .facebook-button {
+  align-self: center;
+}
+@media (max-width: 480px) {
+  .facebook-button {
+    font-size: 12px;
+    padding: 11px 15px;
+  }
+}
