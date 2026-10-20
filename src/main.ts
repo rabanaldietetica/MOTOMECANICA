@@ -78,7 +78,7 @@ const services = [
   }
 ];
 
-const gallery = Array.from({ length: 11 }, (_, index) => {
+const gallery = Array.from({ length: 12 }, (_, index) => {
   const number = String(index + 1).padStart(2, '0');
   return `/images/foto-${number}.png`;
 });
